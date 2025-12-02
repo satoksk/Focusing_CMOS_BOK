@@ -2,7 +2,9 @@
 
 CMOS カメラを用いた BOK 望遠鏡のフォーカス評価プロジェクト。  
 FITS 画像から星を検出し、FWHM・楕円率などを測定、  
+
 さらにアクチュエータ位置 (a, b, c) との関係から最適フォーカス位置を推定します。
+
 Focusing.ipynbとFocusing_fast.ipynbを用意しました。
 基本的にはFocusing_fast.ipynbを使ってください。
 
