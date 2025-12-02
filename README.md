@@ -231,10 +231,10 @@ client = Client(processes=True, n_workers=3, threads_per_worker=1)
 本パイプラインは *PSF フィッティング* を行わず、  
 **2 次モーメントに基づく高速・安定な形状推定** を特徴とし、  
 大量の CMOS データを高速処理するために最適化されています。
+
+---
 Focusing_fast.ipynbでは11個のデータに対して約24秒の実行時間、Focusing.ipynbでは120秒程度です。
 _fastでは画像中の３領域を無作為に選び、detectionを行うようにしています。
----
-
 ## ⚙️ Detection Method
 
 1. **背景推定（Background2D）**  
