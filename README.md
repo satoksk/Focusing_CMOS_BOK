@@ -3,8 +3,8 @@
 CMOS カメラを用いた BOK 望遠鏡のフォーカス評価プロジェクト。  
 FITS 画像から星を検出し、FWHM・楕円率などを測定、  
 さらにアクチュエータ位置 (a, b, c) との関係から最適フォーカス位置を推定します。
-Focusing.jpynbとFocusing_fast.jupynbを用意しました。
-基本的にはFocusing_fast.jupynbを使ってください。
+Focusing.ipynbとFocusing_fast.ipynbを用意しました。
+基本的にはFocusing_fast.ipynbを使ってください。
 
 ---
 
@@ -227,7 +227,7 @@ client = Client(processes=True, n_workers=3, threads_per_worker=1)
 本パイプラインは *PSF フィッティング* を行わず、  
 **2 次モーメントに基づく高速・安定な形状推定** を特徴とし、  
 大量の CMOS データを高速処理するために最適化されています。
-Focusing_fast.jupynbでは11個のデータに対して約24秒の実行時間、Focusing.jupynbでは120秒程度です。
+Focusing_fast.ipynbでは11個のデータに対して約24秒の実行時間、Focusing.ipynbでは120秒程度です。
 _fastでは画像中の３領域を無作為に選び、detectionを行うようにしています。
 ---
 
